@@ -1,0 +1,5 @@
+visdom==0.1.8.9
+tqdm==4.62.3
+pytorch-msssim==0.2.1
+lpips==0.1.4
+kornia==0.6.5

@@ -5,6 +5,13 @@ This repo contains the official code, data and video results for our paper.
 
 https://github.com/liulisixin/save_videos/assets/49985369/c375b269-032e-4e2c-9685-18fa4f5e7a11
 
+## Setup
+conda create --name DIR python=3.7
+conda activate DIR
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+
+
+
 ## TODO:
 - [x] Video results
 - [ ] Datasets (Uploading)
