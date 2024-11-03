@@ -1,6 +1,6 @@
 # Relighting from a Single Image: Datasets and Deep Intrinsic-based Architecture
 ## Description
-This repo contains the official code, data and video results for our paper. 
+This repo contains the official code, data, and video results for our paper. 
 
 
 https://github.com/liulisixin/save_videos/assets/49985369/c375b269-032e-4e2c-9685-18fa4f5e7a11
@@ -13,18 +13,20 @@ conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit
 
 
 ## TODO:
-- [x] Video results
-- [ ] Datasets (Uploading)
-- [ ] Codes (Release soon)
+- [x] Video Results
+- [ ] Datasets (Uploading, release after the review)
+- [ ] Codes (Release after the review)
 
 ## Datasets
 ISR: Intrinsic Scene Relighting Dataset
+
 RSR: Real Scene Relighting Dataset
 
 ## Train
-
+(Release soon)
 
 ## Test
+(Release soon)
 
 ## More video results
 
