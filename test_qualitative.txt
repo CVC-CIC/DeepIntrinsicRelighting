@@ -1,0 +1,189 @@
+------------ Options -------------
+anno: data/anno_RSR/AnyLighttest_pairs_qualitative.txt
+aspect_ratio: 1.0
+batch_size: 1
+checkpoints_dir: ./checkpoints/
+constrain_intrinsic: False
+continue_train: True
+crop_size: 256
+cross_model: False
+dataroot: /ghome/yyang/dataset/ISR/
+dataroot_RSR: /ghome/yyang/dataset/RSR_256/
+dataroot_multilum: /ghome/yyang/dataset/Multi_Illumination_small/train/
+dataroot_vidit: /ghome/yyang/dataset/VIDIT_full/
+dataset_mode: relighting_single_image_rsr
+display_id: -1
+display_winsize: 256
+epoch: save_best
+eval: True
+gpu_ids: [0]
+img_size: (256, 256)
+infinite_range_sha: True
+init_gain: 0.02
+init_type: normal
+input_nc: 3
+introduce_ref_G_2: False
+isTrain: False
+light_prediction: True
+light_type: pan_tilt_color
+load_iter: 0
+load_size: 256
+max_dataset_size: inf
+metric_list: ['Relighted', 'light_position_color']
+model_modify_layer: []
+model_name: relighting_two_stage
+modify_layer: False
+multiple_replace_image: True
+name: exp_rsr_ours_f,
+netG: resnet9_nonlocal_InfRange
+net_intrinsic: resnet9_InfRange
+ngf: 64
+no_dropout: False
+no_flip: True
+norm: batch
+normalization_type: [0, 1]
+num_test: 130
+num_threads: 1
+output_nc: 3
+parallel_method: DataParallel
+phase: test_rsr
+pre_read_data: False
+preprocess: none
+results_dir: ./results/
+serial_batches: True
+server_root: /ghome/yyang/dataset/
+show_gt_intrinsic: False
+special_test: False
+two_stage: True
+use_amp: False
+use_discriminator: False
+verbose: False
+-------------- End ----------------
+dataset [RelightingDatasetSingleImageRSR] was created (shuffle=False, drop_last=False)
+initialize network with normal
+------------ Options -------------
+anno: data/anno_VIDIT/any2any/AnyLight_test_pairs_qualitative.txt
+aspect_ratio: 1.0
+batch_size: 1
+checkpoints_dir: ./checkpoints/
+constrain_intrinsic: False
+continue_train: True
+crop_size: 256
+cross_model: False
+dataroot: /ghome/yyang/dataset/ISR/
+dataroot_RSR: /ghome/yyang/dataset/RSR_256/
+dataroot_multilum: /ghome/yyang/dataset/Multi_Illumination_small/train/
+dataroot_vidit: /ghome/yyang/dataset/VIDIT_full/
+dataset_mode: relighting_single_image_vidit
+display_id: -1
+display_winsize: 256
+epoch: save_best
+eval: True
+gpu_ids: [0]
+img_size: (256, 256)
+infinite_range_sha: True
+init_gain: 0.02
+init_type: normal
+input_nc: 3
+introduce_ref_G_2: False
+isTrain: False
+light_prediction: True
+light_type: pan_tilt_color
+load_iter: 0
+load_size: 256
+max_dataset_size: inf
+metric_list: ['Relighted', 'light_position_color']
+model_modify_layer: []
+model_name: relighting_two_stage
+modify_layer: False
+multiple_replace_image: True
+name: exp_vidit_ours_f,
+netG: resnet9_nonlocal_InfRange
+net_intrinsic: resnet9_InfRange
+ngf: 64
+no_dropout: False
+no_flip: True
+norm: batch
+normalization_type: [0, 1]
+num_test: 130
+num_threads: 1
+output_nc: 3
+parallel_method: DataParallel
+phase: test_vidit
+pre_read_data: False
+preprocess: resize
+results_dir: ./results/
+serial_batches: True
+server_root: /ghome/yyang/dataset/
+show_gt_intrinsic: False
+special_test: False
+two_stage: True
+use_amp: False
+use_discriminator: False
+verbose: False
+-------------- End ----------------
+dataset [RelightingDatasetSingleImageVidit] was created (shuffle=False, drop_last=False)
+initialize network with normal
+------------ Options -------------
+anno: data/multi_illumination/test_qualitative.txt
+aspect_ratio: 1.0
+batch_size: 1
+checkpoints_dir: ./checkpoints/
+constrain_intrinsic: False
+continue_train: True
+crop_size: 256
+cross_model: False
+dataroot: /ghome/yyang/dataset/ISR/
+dataroot_RSR: /ghome/yyang/dataset/RSR_256/
+dataroot_multilum: /ghome/yyang/dataset/Multi_Illumination_small/test/
+dataroot_vidit: /ghome/yyang/dataset/VIDIT_full/
+dataset_mode: relighting_single_image_multilum
+display_id: -1
+display_winsize: 256
+epoch: save_best
+eval: True
+gpu_ids: [0]
+img_size: (256, 256)
+infinite_range_sha: True
+init_gain: 0.02
+init_type: normal
+input_nc: 3
+introduce_ref_G_2: False
+isTrain: False
+light_prediction: False
+light_type: probes
+load_iter: 0
+load_size: 256
+max_dataset_size: inf
+metric_list: ['Relighted']
+model_modify_layer: []
+model_name: relighting_two_stage
+modify_layer: False
+multiple_replace_image: True
+name: exp_multilum_ours_f
+netG: resnet9_nonlocal_InfRange
+net_intrinsic: resnet9_InfRange
+ngf: 64
+no_dropout: False
+no_flip: True
+norm: batch
+normalization_type: [0, 1]
+num_test: 130
+num_threads: 1
+output_nc: 3
+parallel_method: DataParallel
+phase: test_multilum
+pre_read_data: False
+preprocess: none
+results_dir: ./results/
+serial_batches: True
+server_root: /ghome/yyang/dataset/
+show_gt_intrinsic: False
+special_test: False
+two_stage: True
+use_amp: False
+use_discriminator: False
+verbose: False
+-------------- End ----------------
+dataset [RelightingDatasetSingleImageMultilum] was created (shuffle=False, drop_last=False)
+initialize network with normal
