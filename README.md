@@ -34,13 +34,13 @@ In the code, the path of datasets can be modified in the self.server_root of opt
 ## Train
 Train from the scratch on the ISR dataset:
 ```angular2html
-CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py isr   # For ISR dataset
+python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py isr   # For ISR dataset
 ```
 Continue training on other datasets (place the pre-trained model in checkpoints/{exp} with the name base_{}):
 ```angular2html
-CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py rsr_ours_f   # For RSR dataset
-CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py vidit_ours_f   # For VIDIT dataset
-CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py multilum_ours_f   # For Multi-illumination dataset
+python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py rsr_ours_f   # For RSR dataset
+python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py vidit_ours_f   # For VIDIT dataset
+python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py multilum_ours_f   # For Multi-illumination dataset
 ```
 **Note**: 
 1. When using the VIDIT dataset, place all images into a single folder to create a complete version, named VIDIT_full.
