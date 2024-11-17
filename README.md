@@ -30,8 +30,11 @@ You can download only the Reflectance and Shading, as the image can be calculate
 ### RSR: Real Scene Relighting Dataset
 [Download](https://cvcuab-my.sharepoint.com/:u:/g/personal/yixiong_cvc_uab_cat/ETWcj5yBKgJLqUZDsT9Q39QBJ8GUJYEQuzNWpV5FS2lPRg?e=jEYI5t)
 
-In the code, the path of datasets can be modified in the self.server_root of options/base_options.py. 
+The RSR dataset was created in our lab environment. The dataset above is in 256×256 resolution, as used in our paper. If you need high-resolution or raw images, please let us know.
+
 ## Train
+In the code, the path of datasets can be modified in the self.server_root of options/base_options.py. 
+
 Train from the scratch on the ISR dataset:
 ```angular2html
 python -m torch.distributed.launch --nproc_per_node=1 --master_port 7777 train.py isr   # For ISR dataset
