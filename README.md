@@ -32,6 +32,19 @@ You can download only the Reflectance and Shading, as the image can be calculate
 
 The RSR dataset was created in our lab environment. The dataset above is in 256×256 resolution, as used in our paper. If you need high-resolution or raw images, please let us know.
 
+Nov 23, 2024: Here is the dataset with the original resolution [Download](https://cvcuab-my.sharepoint.com/:u:/g/personal/yixiong_cvc_uab_cat/ET7MLf3u27dMktC52VaMGL4Bu203mKfAcniBaPKhGktVIw?e=ZYPAjX). 
+
+**Note**: 
+1. The name of the picture is: `{index of picture}_{index of group (different scene or different view)}_{pan}_{tilt}_{R}_{G}_{B}_{index of scene}_{not use}_{index of view}_{index of light position}`. The quantities that need attention are pan, tilt, and color (RGB), which represent the parameters of the light. 
+2. The order of the lights are as follow:
+
+|  5  |  4  |  3  |
+| --- | --- | --- |
+|  6  |  1  |  2  |
+|  7  |  8  |  9  |
+
+
+
 ## Train
 In the code, the path of datasets can be modified in the self.server_root of options/base_options.py. 
 
