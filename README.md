@@ -27,12 +27,14 @@ pip install -r requirements.txt
 
 You can download only the Reflectance and Shading, as the image can be calculated from them in the code.
 
+**Note**: The name of the picture is: `{Index of scene (part 1)}_{Index of scene (part 2)}_{pan}_{tilt}_{light temperature}_{not use}`. The first two numbers represent the scene ID, while pan, tilt, and light temperature represent the lighting parameters.
+
 ### RSR: Real Scene Relighting Dataset
 [Download](https://cvcuab-my.sharepoint.com/:u:/g/personal/yixiong_cvc_uab_cat/ETWcj5yBKgJLqUZDsT9Q39QBJ8GUJYEQuzNWpV5FS2lPRg?e=jEYI5t)
 
 The RSR dataset was created in our lab environment. The dataset above is in 256×256 resolution, as used in our paper. If you need high-resolution or raw images, please let us know.
 
-Nov 23, 2024: Here is the dataset with the original resolution [Download](https://cvcuab-my.sharepoint.com/:u:/g/personal/yixiong_cvc_uab_cat/ET7MLf3u27dMktC52VaMGL4Bu203mKfAcniBaPKhGktVIw?e=ZYPAjX). 
+**Updated on Nov 23, 2024**: Here is the dataset with the original resolution [Download](https://cvcuab-my.sharepoint.com/:u:/g/personal/yixiong_cvc_uab_cat/ET7MLf3u27dMktC52VaMGL4Bu203mKfAcniBaPKhGktVIw?e=ZYPAjX). 
 
 **Note**: 
 1. The name of the picture is: `{index of picture}_{index of group (different scene or different view)}_{pan}_{tilt}_{R}_{G}_{B}_{index of scene}_{not use}_{index of view}_{index of light position}`. The quantities that need attention are pan, tilt, and color (RGB), which represent the parameters of the light. 
